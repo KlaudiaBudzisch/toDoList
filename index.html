@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>to do list</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">to do list</h1>
+    </header>
+
+    <section id="content" class="main-container">
+        <form action="">
+            <input type="text" placeholder="Let's add some task!">
+            <button class="add-task"><i class="fab fa-telegram-plane"></i></button>
+        </form>
+        <ul class="task-list"></ul>
+    </section>
+    <div id="editor"></div>
+
+    <section class="nav">
+        <div class="task-file"><button id="cmd" class="file">Export to PDF <i class="far fa-file-alt"></i></button></div>
+        <div class="task-number">All your tasks: <span>0</span></div>
+        <div class="task-remove"><button class="remove">Delete all <i class="far fa-trash-alt"></i></button></div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="code.js"></script>
+</body>
+
+</html>
